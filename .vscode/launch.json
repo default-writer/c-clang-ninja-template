@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "lldb-dap",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "preLaunchTask": "build"
+        }
+    ]
+}
