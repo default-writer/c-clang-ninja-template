@@ -2,6 +2,7 @@
     "recommendations": [
         "llvm-vs-code-extensions.vscode-clangd",
         "llvm-vs-code-extensions.lldb-dap",
-        "google.geminicodeassist"
+        "google.geminicodeassist",
+        "daylerees.rainglow"
     ]
 }
