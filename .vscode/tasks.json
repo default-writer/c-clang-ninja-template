@@ -4,30 +4,39 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "make",
-            "args": [
-                "-f",
-                "Makefile.linux"
-            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "windows": {
+                "command": "nmake",
+                "args": [ "/f", "Makefile.win" ]
+            },
+            "linux": {
+                "command": "make",
+                "args": [ "-f", "Makefile.linux" ]
+            },
+            "osx": {
+                "command": "make",
+                "args": [ "-f", "Makefile.linux" ]
             }
         },
         {
             "label": "clean",
             "type": "shell",
-            "command": "make",
-            "args": [
-                "-f",
-                "Makefile.linux",
-                "clean"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "group": "build",
+            "windows": {
+                "command": "nmake",
+                "args": [ "/f", "Makefile.win", "clean" ]
+            },
+            "linux": {
+                "command": "make",
+                "args": [ "-f", "Makefile.linux", "clean" ]
+            },
+            "osx": {
+                "command": "make",
+                "args": [ "-f", "Makefile.linux", "clean" ]
             }
         }
-
     ]
 }
