@@ -7,7 +7,7 @@ This template provides a ready-to-use development environment for C++ projects o
 
 *   This project template and its documentation were created with the help of [Gemini Code Assist](https://gemini.google.com/app).
 *   The compiler toolchain is provided by the [CLANG](https://clang.llvm.org/), [LLVM](https://llvm.org/), [LLDB](https://lldb.llvm.org), [Ninja](https://ninja-build.org/), 
-*   The editor/debugger support is provided by [Visual Studio Code](https://code.visualstudio.com/) with the extensions: [CLANGD](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.clangd), [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)
+*   The editor/debugger support is provided by [Visual Studio Code](https://code.visualstudio.com/) with the extensions: [CLANGD](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd), [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)
 
 
 ## Features
@@ -40,7 +40,7 @@ This template provides a ready-to-use development environment for C++ projects o
 
 ## Extensions
 
-*  [CLANGD](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.clangd)
+*  [CLANGD](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
 *  [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)
 
 ## History
