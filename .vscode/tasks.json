@@ -9,16 +9,18 @@
                 "isDefault": true
             },
             "windows": {
-                "command": "nmake",
-                "args": [ "/f", "Makefile.win" ]
+                "command": "ninja",
+                "args": [
+                    "-f",
+                    "build.windows.ninja"
+                ]
             },
             "linux": {
-                "command": "make",
-                "args": [ "-f", "Makefile.linux" ]
-            },
-            "osx": {
-                "command": "make",
-                "args": [ "-f", "Makefile.linux" ]
+                "command": "ninja",
+                "args": [
+                    "-f",
+                    "build.linux.ninja"
+                ]
             }
         },
         {
@@ -26,16 +28,22 @@
             "type": "shell",
             "group": "build",
             "windows": {
-                "command": "nmake",
-                "args": [ "/f", "Makefile.win", "clean" ]
+                "command": "ninja",
+                "args": [
+                    "-f",
+                    "build.windows.ninja",
+                    "-t",
+                    "clean"
+                ]
             },
             "linux": {
-                "command": "make",
-                "args": [ "-f", "Makefile.linux", "clean" ]
-            },
-            "osx": {
-                "command": "make",
-                "args": [ "-f", "Makefile.linux", "clean" ]
+                "command": "ninja",
+                "args": [
+                    "-f",
+                    "build.linux.ninja",
+                    "-t",
+                    "clean",
+                ]
             }
         }
     ]

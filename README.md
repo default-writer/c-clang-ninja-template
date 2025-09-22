@@ -6,9 +6,7 @@ This template provides a ready-to-use development environment for C++ projects o
 ## Credits
 
 *   This project template and its documentation were created with the help of [Gemini Code Assist](https://gemini.google.com/app).
-*   The core compiler toolchain is provided by the [GNU Compiler Collection (GCC)](https://gcc.gnu.org/), [NMAKE](https://learn.microsoft.com/en-us/cpp/build/reference/nmake-reference?view=msvc-170).
-*   The Linux environment is based on [Debian](https://www.debian.org/), [CLANG](https://clang.llvm.org/), [LLVM](https://llvm.org/), [LLDB](https://lldb.llvm.org) and [LLVM Project](https://apt.llvm.org/).
-*   The Windows environment is based on [Windows](https://www.microsoft.com/en-us/windows/), [Clang/LLVM support in Visual Studio projects](https://learn.microsoft.com/en-us/cpp/build/clang-support-msbuild?view=msvc-170) and [Visual Studio 2022 Community Toolkit](https://visualstudio.microsoft.com/vs/).
+*   The compiler toolchain is provided by the[CLANG](https://clang.llvm.org/), [LLVM](https://llvm.org/), [LLDB](https://lldb.llvm.org).
 
 ## Features
 
@@ -25,37 +23,21 @@ This template provides a ready-to-use development environment for C++ projects o
 
 ## Environment Setup
 
-*   **On Linux (Debian/Ubuntu)**
+- Linux/Debian:
+```bash
+./bin/install.sh
+```
 
-    An installation script is provided to set up the complete LLVM/Clang development environment. To run it, execute the following command from the project root:
-
-    ```bash
-    ./bin/install.sh
-    ```
-
-    The script uses `sudo` for system-wide package installation, so it will likely prompt you for your password.
-
-*   **On Windows**
-
-    On Windows, you need the C++ build tools, which are part of Visual Studio. You can install **Visual Studio 2022 Community** with the required "Desktop development with C++" workload and the **C++ Clang Compiler for Windows** by running the following command in an administrator terminal:
-
-    ```bash
-    winget install "Visual Studio Community 2022" --override "--add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Component.VC.Llvm.Clang" -s msstore
-    ```
-
-## Usage in VS Code
-
-1.  **Open the folder in VS Code.**
-2.  When prompted, **install the recommended extensions**. These are crucial for language support (`vscode-clangd`) and debugging (`lldb-dap`).
-3.  **Build the project**: Press `Ctrl+Shift+B` (or `Cmd+Shift+B` on macOS) to run the default build task, which executes `make`.
-4.  **Debug the application**:
-    *   Set a breakpoint in `main.cpp`.
-    *   Go to the "Run and Debug" view (the bug icon in the activity bar) and press the green play button (or simply press `F5`).
+- Windows:
+```powershell
+./bin/install.ps1
+```
 
 ## History
 
-*  20-09-2025: Added cross-platform build support in VS Code for Windows (`nmake`), Linux, and macOS (`make`).
-*  21-09-2025: Initial project setup with C/C++ source, Linux Makefile, and VS Code configuration.
+*  22-09-2025: Switched to CLANG, LLVM, LLDB toolchain.
+*  21-09-2025: Added cross-platform build support in VS Code for Windows (`nmake`), Linux, and macOS (`make`).
+*  20-09-2025: Initial project setup with C/C++ source, Linux Makefile, and VS Code configuration.
 
 ## About This README
 
