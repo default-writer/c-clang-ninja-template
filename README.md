@@ -1,17 +1,19 @@
 # C++ Makefile Template
 
-A simple and modern C++ project template using Make, Clang, and Visual Studio Code.
+A simple and modern C++ project template using Ninja, Clang and Visual Studio Code.
 
 This template provides a ready-to-use development environment for C++ projects on Debian-based Linux systems (including WSL), with a focus on modern tooling.
 ## Credits
 
 *   This project template and its documentation were created with the help of [Gemini Code Assist](https://gemini.google.com/app).
-*   The compiler toolchain is provided by the[CLANG](https://clang.llvm.org/), [LLVM](https://llvm.org/), [LLDB](https://lldb.llvm.org).
+*   The compiler toolchain is provided by the [CLANG](https://clang.llvm.org/), [LLVM](https://llvm.org/), [LLDB](https://lldb.llvm.org), [Ninja](https://ninja-build.org/), 
+*   The editor/debugger support is provided by [Visual Studio Code](https://code.visualstudio.com/) with the extensions: [CLANGD](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.clangd), [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)
+
 
 ## Features
 
-*   **Build System**: A straightforward `Makefile` for compiling your project.
-*   **Compiler**: Configured to use the **Clang** C++ compiler.
+*   **Build System**: A straightforward `Ninja` for compiling your project.
+*   **Compiler**: Configured to use the **clang** C++ compiler.
 *   **Toolchain**: Automated installation of the complete LLVM/Clang toolchain (version 21), including:
     *   `clangd` for language server support (autocompletion, diagnostics).
     *   `lldb` and `lldb-dap` for powerful debugging.
@@ -32,6 +34,14 @@ This template provides a ready-to-use development environment for C++ projects o
 ```powershell
 ./bin/install.ps1
 ```
+## Editors
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Extensions
+
+*  [CLANGD](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.clangd)
+*  [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)
 
 ## History
 
