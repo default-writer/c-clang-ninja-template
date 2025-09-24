@@ -1,4 +1,4 @@
-# C++ Makefile Template
+# C++ Ninja Template
 
 A simple and modern C++ project template using Ninja, Clang and Visual Studio Code.
 
