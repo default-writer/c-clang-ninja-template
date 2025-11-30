@@ -1,4 +1,4 @@
-# C Ninja Template
+# c clang ninja template
 
 A simple and modern C++ project template using Ninja, Clang and Visual Studio Code.
 
